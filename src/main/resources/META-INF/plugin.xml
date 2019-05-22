@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>li.joker.tools.odli</id>
+    <name>SuperInspector</name>
+    <vendor email="super@joker.li" url="https://joker.li">Joker</vendor>
+
+    <description>99.9% more available than AndroidStudio's</description>
+
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="SyncOnDeviceLayoutInspectorResoult" class="li.joker.ondevicelayoutinspector.plugin.Sync"
+                text="Sync SuperInspector">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt O" second-keystroke="meta ctrl O"/>
+        </action>
+    </actions>
+
+</idea-plugin>

@@ -1,0 +1,23 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.8'
+}
+
+group 'li.joker.tools'
+version '1.1-SNAPSHOT'
+
+intellij {
+    version '2018.3.6'
+    pluginName 'SuperInspector'
+    patchPluginXml.sinceBuild '121'
+    patchPluginXml.untilBuild '193'
+}
+patchPluginXml {
+    changeNotes """
+      First release.<br>
+      <em>Enjoy!</em>"""
+}
+//
+dependencies {
+    compileOnly files('src/android-studio.jar')
+    compileOnly files('src/ddmlib-26.1.2.jar')
+}
